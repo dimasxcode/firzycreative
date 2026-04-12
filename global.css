@@ -218,7 +218,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("library/design/bg-photos.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("library/design/bg-photos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.5;
@@ -710,33 +710,6 @@ body {
     align-items: center;
     margin-bottom: 5px;
 }
-
-/* panel-medsos */
-/* .medsoc-panel {
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.medsoc-panel a {
-    display: inline-block;
-    width: fit-content;
-    height: fit-content;
-    margin: 20px;
-}
-
-.medsoc-panel img {
-    border-radius: 12px;
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    background-color: none;
-    transition: all 0.3s ease;
-}
-
-.medsoc-panel img:active {
-    padding: 5px;
-    background-color: var(--hover-active-color);
-} */
 
 /* panel-service */
 .service-list {
