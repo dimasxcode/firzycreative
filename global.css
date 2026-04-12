@@ -697,6 +697,10 @@ body {
     line-height: 1.6em;
 }
 
+.inner-contact h1 {
+    line-height: 1.9em;
+}
+
 .inner-contact img {
     width: 40px;
     height: 40px;
@@ -709,6 +713,10 @@ body {
     gap: 10px;
     align-items: center;
     margin-bottom: 5px;
+}
+
+.cont-contact p {
+    font-size: 20px;
 }
 
 /* panel-service */
@@ -763,6 +771,21 @@ body {
     background-color: #040504;
 }
 
+.panel-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.panel-content {
+    width: 200px;
+}
+
+.panel-content p {
+    font-size: clamp(10px, 1vw, 14px);
+    width: 100%;
+}
+
 .panel-content button {
     width: 150px;
     height: 60px;
@@ -784,21 +807,8 @@ body {
     transform: scale(0.95);
 }
 
-.panel-content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* menjaga-panel-lain-tidak-berubah */
-.panel-content {
-    width: 200px;
-}
-
 /* kolom-3 */
 .contact-grid-3 {
-    /* grid-column: 2;
-    grid-row: 2; */
     grid-column: span 2;
     background-color: rgb(0, 0, 0, 0.5);
     border-radius: var(--border-radius);
@@ -808,14 +818,12 @@ body {
     overflow: hidden;
 }
 
-/* kolom-thumbnail */
 .yt-grid {
     display: grid;
     grid-template-columns: 2fr 5px 1fr;
     text-align: center;
 }
 
-/* divider(batas) */
 .divider {
     width: 0.2vw;
     height: 90%;
@@ -836,6 +844,12 @@ body {
     color: var(--primary-text-white);
     padding: 10px;
     border-radius: var(--border-radius);
+}
+
+.container-thumb h3 {
+    text-align: right;
+    color: var(--secondary-text-color);
+    padding-right: 2%;
 }
 
 .thumbnail-wrapper {
@@ -938,7 +952,7 @@ body {
 .container-footer {
     display: flex;
     height: 10vh;
-    padding: 0 90px;
+    padding: 15px 90px;
     background-color: rgb(0, 0, 0, 0.9);
     align-items: center;
     justify-content: space-between;
@@ -951,11 +965,26 @@ body {
     color: var(--primary-text-white);
 }
 
-.container-footer img {
+.footer-image {
     display: flex;
-    width: 65px;
-    height: 65px;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer-image img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
     cursor: pointer;
+}
+
+.footer-image p {
+    height: 60%;
+    align-items: start;
+    color: aliceblue;
+    font-size: x-small;
+    margin: 0;
 }
 
 /*==[ PORTFOLIO PAGE ]==*/
