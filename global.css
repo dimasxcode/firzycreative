@@ -203,31 +203,6 @@ body {
     color: #09c989;
 }
 
-/* ikon-shop */
-.main-user {
-    display: flex;
-    border-radius: var(--border-radius);
-    width: fit-content;
-    height: 50px;
-    gap: 10px;
-}
-
-.main-user img {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-}
-
-.main-user img:hover {
-    background-color: var(--hover-active-color);
-}
-
-.main-user img:active {
-    padding: 5px;
-}
-
 /*==[ SECTION 1 ]==*/
 .container-section1 {
     position: relative;
@@ -356,10 +331,6 @@ body {
     flex-shrink: 0;
     background-color: whitesmoke;
     transition: transform 0.3s ease-in-out;
-}
-
-.carousel-track img:hover {
-    transform: scale(0.95);
 }
 
 /*==[ SECTION 3 ]==*/
