@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Firzy Network</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="icon" type="image/x-icon" href="asset/logo-firzy-creative_transparent.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- lazy-load -->
+    <script src="js/lazy-load.js"></script>
+    <script src="js/scroll-memory.js"></script>
+</head>
+<body>
+    <!--[ NAVIGATION BAR ]-->
+    
+<header class="header-navbar">
+    <div class="container-navbar">
+        <nav class="navbar">
+            <!-- logo -->
+            <div class="logo-navbar">
+                <img src="asset/ikon-header_logo-firzy-creative_transparent.png" alt=""/>
+            </div>
+
+            <!-- navlinks -->
+            <div class="nav-links">
+                <a href="index.html" class="navlinks">Home</a>
+                <a href="portfolio.html" class="navlinks">Portfolio</a>
+                <a href="about.html" class="navlinks">About</a>
+                <a href="services.html" class="navlinks active">Services</a>
+                <a href="contact.html" class="navlinks">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- data-tooltip -->
+<script src="js/data-tooltip.js"></script>
+    <section>
+        <div class="service-page">
+            <!-- Pembuatan Animasi -->
+            <h1 style="font-size: clamp(25px, 5vw, 50px); margin: 10px 0;">Produksi Animasi</h1>
+            <div class="service-content">
+                <div class="image-content-svc">
+                    <img src="library/design/aot-background.jpg" alt="">
+                </div>
+                <div class="text-content-svc">
+                    <h2>3D Animasi</h2>
+                    <p>Sebagai agensi kreatif terutama di bidang animasi, kita menyediakan jasa pembuatan animasi 3d dengan menggunakan software Blender 3D, diantaranya:</p>
+                    <ul>
+                        <li>- Animasi Film / Kartun</li>
+                        <li>- Animasi Edukasi</li>
+                        <li>- Animasi Cinematic</li>
+                        <li>- Animasi untuk CGI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-content">
+                <div class="image-content-svc">
+                    <img src="library/design/aot-background.jpg" alt="">
+                </div>
+                <div class="text-content-svc">
+                    <h2>2D Animasi</h2>
+                    <p>Selain 3d animasi, kita juga menyediakan jasa pembuatan animasi 2d dengan menggunakan software Alight Motion, diantaranya:</p>
+                    <ul>
+                        <li>- Animasi Kartun</li>
+                        <li>- Animasi Logo Brand</li>
+                        <li>- Animasi Bumper</li>
+                        <li>- Animasi Motion Graphic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ilustrasi Visual -->
+            <h1 style="font-size: clamp(25px, 5vw, 50px); margin: 10px 0;">Ilustrasi Visual</h1>
+            <div class="service-content">
+                <div class="image-content-svc">
+                    <img src="library/image/galeri-illustrasi-1.png" alt="">
+                </div>
+                <div class="text-content-svc">
+                    <h2>Ilustrasi</h2>
+                    <p>Berikutnya adalah Ilustrasi, kita menyediakan jasa pembuatan gambar untuk kebutuhan cetak, informatif atau lainnya. Mencakup seluruh proses maupun pengeditan bagian tersendiri, diantaranya:</p>
+                    <ul>
+                        <li>- Gambar Ilustrasi</li>
+                        <li>- Gambar Anime</li>
+                        <li>- Chibi Art</li>
+                        <li>- Comiss Draw</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Editor Konten -->
+            <h1 style="font-size: clamp(25px, 5vw, 50px); margin: 10px 0;">Editor Konten</h1>
+            <div class="service-content">
+                <div class="image-content-svc">
+                    <img src="library/design/aot-background.jpg" alt="">
+                </div>
+                <div class="text-content-svc">
+                    <h2>Video Editing</h2>
+                    <p>Berikutnya adalah video editing, kita menyediakan jasa pembuatan konten yang mencakup seluruh proses pengeditan video untuk keperluan seperti konten youtube dan lainnya, diantaranya:</p>
+                    <ul>
+                        <li>- Konten YouTube</li>
+                        <li>- Konten Shorts/Clip</li>
+                        <li>- Konten Dokumentasi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-content">
+                <div class="image-content-svc">
+                    <img src="library/design/aot-background.jpg" alt="">
+                </div>
+                <div class="text-content-svc">
+                    <h2>Pembuatan Konten</h2>
+                    <p>Berikutnya adalah pembuatan konten, kita menyediakan jasa pembuatan konten penuh yang mencakup seluruh proses maupun pengeditan konten untuk keperluan seperti konten sosial media dan lainnya, diantaranya:</p>
+                    <ul>
+                        <li>- Paket Konten YouTube</li>
+                        <li>- Paket Konten Shorts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shortcut-awal-halaman -->
+    
+<!-- shortcut naik awal halaman -->
+<button id="scrollTopBtn">.</button>
+<script>
+    (function() {
+        scrollBtn = document.getElementById("scrollTopBtn");
+
+        // Event scroll
+        window.addEventListener("scroll", () => {
+            const windowHeight = window.innerHeight;
+            const scrolledFromTop = window.scrollY;
+            const totalDocHeight = document.documentElement.scrollHeight;
+            const tolerance = 100;
+
+            // Cek apakah sudah di bawah halaman
+            if ((windowHeight + scrolledFromTop) >= (totalDocHeight - tolerance)) {
+                scrollBtn.classList.add("show"); // tampilkan tombol
+            } else {
+                scrollBtn.classList.remove("show"); // sembunyikan tombol
+            }
+        });
+
+        // event-listener klik tombol
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    })();
+</script>    <!--[ CONTACT & FOOTER ]-->
+    <!--[ EMAIL AND CONTACT ]-->
+<section>
+    <div class="section-contact">
+        <div class="section-contact-grid">
+            <div class="contact-grid-1">
+                <!-- panel-contact -->
+                <div class="inner-contact">
+                    <h1 style="line-height: 1.9em;">Kontak Kami</h1>
+                    <div class="cont-contact">
+                        <img src="library/design/email-icon.jpg" alt="">
+                        <p style="font-size: 20px;">masdims388@gmail.com</p>
+                        <div class="divider"></div>
+                        <img src="library/design/telp-icon.jpg" alt="">
+                        <p style="font-size: 20px;">082322897591</p>
+                    </div>
+                    <p>Alamat 1 : Jalan Gathotkaca No.32, Jombor Lor, Sleman.</p>
+                    <p>Alamat 2 : Jalan Laban No.30, Jatibogor, Tegal.</p>
+                </div>
+                <!-- panel-service -->
+                <div class="service-list">
+                    <h3>Layanan Kami:</h3>
+                    <a href="">Animasi</a>
+                    <a href="">Ilustrasi</a>
+                    <a href="">Pengeditan Video</a>
+                    <a href="">Pembuatan Desain</a>
+                </div>
+            </div>
+            <div class="contact-grid-2">
+                <div class="wa-panel">
+                    <div class="panel-content">
+                        <h3>WhatsApp Chat!</h3>
+                        <button class="btn-wa-forward">
+                            <img src="library/design/button-wa-panel.png" alt="tombol-whatsapp">
+                        </button>
+                        <p style="font-size: clamp(10px, 1vw, 14px); width: 100%;">Informasi lebih lanjut bisa chat WA
+                            diatas.</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="chatbot-panel">
+                    <div class="panel-content">
+                        <h3>AI Assistant</h3>
+                        <div class="placeholder-chat">
+                            <p>Butuh bantuan cepat</p>
+                        </div>
+                        <button><img src="library/design/firzy-ai-icon.png" alt="firzy-ai-button"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-grid-3">
+                <div class="yt-grid">
+                    <div class="thumb-column">
+                        <div class="container-thumb">
+                            <a style="text-decoration: none; color: inherit;" href="" class="latest-content" target="_blank">
+                                <div class="thumbnail-wrapper">
+                                    <img id="latest-thumb" src="" alt="" />
+                                </div>
+                                <h1 id="title-thumbnail"></h1>
+                            </a>
+                            <h3 style="text-align: right; color: var(--secondary-text-color); padding-right: 2%;" id="views-count"></h3>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="profile-column">
+                        <div class="container-profile">
+                            <div class="youtube-icon">
+                                <img src="library/design/yt-icon.png" alt="">
+                                <h3>YouTube</h3>
+                            </div>
+                            <div class="live-badge">LIVE SEKARANG!</div>
+                            <div class="profile-wrapper">
+                                <a href="https://www.youtube.com/@firzycreative"><img src="asset/logo-firzy-creative.png" id="profile-img" alt="Foto Profil"></a>
+                            </div>
+                            <h2>Firzy Creative</h2>
+                            <p>Official Channel YouTube Firzy Creative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/wa-api.js"></script>
+<script src="js/youtube-wrap.js"></script>
+
+<!--[ FOOTER ]-->
+<section>
+    <div class="container-footer">
+        <h3>Copyright © 2026 Firzy Creative / All Rights Reserved.</h3>
+        <img style="position:relative;" src="asset/logo-firzy-creative_transparent.png" alt="">
+        <p style="position: absolute; color: aliceblue; right: 5.5%; font-size: x-small;">TM</p>
+    </div>
+</section></body>
+
+</html>
