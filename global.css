@@ -207,9 +207,9 @@ body {
 .container-section1 {
     position: relative;
     display: flex;
-    background-color: black;
     justify-content: center;
     align-items: center;
+    background-color: black;
     height: 85vh;
     width: 100%;
 }
@@ -218,7 +218,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("library/design/bg-photos.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("library/design/bg-photos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.5;
