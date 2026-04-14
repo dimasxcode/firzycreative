@@ -209,15 +209,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-
     background: rgba(0, 0, 0, 0.5);
-
     opacity: 0;
     visibility: hidden;
-
     transition: opacity 0.3s ease;
-
-    z-index: 900;
+    z-index: 100;
 }
 
 .overlay.active {
@@ -235,19 +231,15 @@ body {
         right: 0;
         height: 100vh;
         width: 280px;
-
         background-color: var(--default-background-color);
-
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-
         padding: 40px;
-
         transform: translateX(100%);
+        will-change: transform;
         transition: transform 0.35s ease;
-
-        z-index: 1000;
+        z-index: 9999;
     }
 
     .nav-links.active {
@@ -257,7 +249,16 @@ body {
     /* HAMBURGER MUNCUL */
     .hamburger {
         display: flex;
-        z-index: 1100;
+        flex-direction: column;
+        gap: 3px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: black;
     }
 
     /* FIX LOGO */
@@ -274,10 +275,6 @@ body {
     .navlinks {
         font-size: 18px;
     }
-}
-
-body.menu-open {
-    overflow: hidden;
 }
 
 /*==[ SECTION 1 ]==*/
@@ -309,7 +306,7 @@ body.menu-open {
     padding-left: 60px;
     position: relative;
     transform: translateY(100px);
-    z-index: 1;
+    z-index: 0;
 }
 
 .text-section1 h1 {
