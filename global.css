@@ -174,14 +174,21 @@ body {
 }
 
 .logo-navbar {
-    display: block;
-    margin-right: 200px;
-}
-
-.logo-navbar img {
     align-items: center;
     height: clamp(32px, 6vw, 80px);
     cursor: pointer;
+}
+
+.logo-navbar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-navtools {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
 }
 
 .nav-links {
@@ -201,6 +208,54 @@ body {
 .navlinks:hover,
 .navlinks.active {
     color: #09c989;
+}
+
+.theme-btn {
+    display: flex;
+    cursor: pointer;
+    background: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    /* padding: 0; */
+}
+
+/* .theme-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.light-theme,
+.night-theme {
+    display: flex;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    visibility: 0;
+}
+
+.light-theme {
+    transform: translateY(-100%);
+}
+
+.light-theme.active {
+    visibility: 1;
+    transform: translateY(0);
+}
+
+.night-theme {
+    scale: 1.5;
+    transform: translateY(100%);
+}
+
+.night-theme.active {
+    visibility: 1;
+    transform: translateY(0);
+    background-color: var(--default-background-color);
 }
 
 .overlay {

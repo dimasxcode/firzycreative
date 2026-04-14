@@ -20,6 +20,8 @@
     <script src="js/toogle-menu.js"></script>
     <!-- writing-text-animation -->
     <script src="js/anm-writing.js"></script>
+    <!-- toogle-theme -->
+     <script src="js/toogle-theme.js"></script>
 </head>
 
 <body>
@@ -32,25 +34,29 @@
                     <img src="asset/ikon-header_logo-firzy-creative_transparent.png" alt="" loading="lazy" />
                 </div>
 
-                <!-- navlinks -->
-                <div class="nav-links">
-                    <a href="index.html" class="navlinks active">Home</a>
-                    <a href="portfolio.html" class="navlinks">Portfolio</a>
-                    <a href="about.html" class="navlinks">About</a>
-                    <a href="services.html" class="navlinks">Services</a>
-                    <a href="contact.html" class="navlinks">Contact</a>
-                </div>
-                <button id="theme-toggle" class="theme-btn">
-                    <span class="light-theme"><img data-tooltip="Mode Terang"
-                            src="library/design/toggle-theme-sun(light).svg" alt=""></span>
-                    <span class="light-theme"><img data-tooltip="Mode Gelap"
-                            src="library/design/toggle-theme-moon(light).svg" alt=""></span>
-                </button>
-                <!-- hamburger button -->
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="container-navtools">
+                    <!-- navlinks -->
+                    <div class="nav-links">
+                        <a href="index.html" class="navlinks active">Home</a>
+                        <a href="portfolio.html" class="navlinks">Portfolio</a>
+                        <a href="about.html" class="navlinks">About</a>
+                        <a href="services.html" class="navlinks">Services</a>
+                        <a href="contact.html" class="navlinks">Contact</a>
+                    </div>
+                        <button id="theme-toggle" class="theme-btn">
+                            <span class="light-theme">
+                                <img data-tooltip="Mode Terang" src="library/design/toggle-theme-sun(light).svg" alt="">
+                            </span>
+                            <span class="night-theme">
+                                <img data-tooltip="Mode Gelap" src="library/design/toggle-theme-moon(dark).svg" alt="">
+                            </span>
+                        </button>
+                        <!-- hamburger button -->
+                        <div class="hamburger" id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                 </div>
             </nav>
         </div>
