@@ -203,33 +203,66 @@ body {
     color: #09c989;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 900;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* media Query */
-@media(max-width:1024px) {
-    @media (max-width: 1024px) {
-        .nav-links {
-            position: absolute;
-            top: 100%;
-            right: 0;
-            width: 100%;
-            background-color: var(--default-background-color);
+@media (max-width: 1024px) {
 
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+    /* NAV LINKS JADI SIDEBAR */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 280px;
 
-            padding: 20px 0;
+        background-color: var(--default-background-color);
 
-            transform: translateY(-200%);
-            transition: transform 0.3s ease;
-        }
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
 
-        .nav-links.active {
-            transform: translateY(0);
-        }
+        padding: 40px;
 
-        .hamburger {
-            display: flex;
-        }
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    /* HAMBURGER MUNCUL */
+    .hamburger {
+        display: flex;
+        z-index: 1100;
+    }
+
+    /* FIX LOGO */
+    .logo-navbar {
+        margin-right: 0;
     }
 }
 
@@ -241,6 +274,10 @@ body {
     .navlinks {
         font-size: 18px;
     }
+}
+
+body.menu-open {
+    overflow: hidden;
 }
 
 /*==[ SECTION 1 ]==*/
