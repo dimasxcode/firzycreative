@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: --apple-system, 'Montserrat', sans-serif;
     background-image: url("library/design/bg-photos.jpg");
     background-size: cover;
     background-position: center;
@@ -201,6 +201,46 @@ body {
 .navlinks:hover,
 .navlinks.active {
     color: #09c989;
+}
+
+/* media Query */
+@media(max-width:1024px) {
+    @media (max-width: 1024px) {
+        .nav-links {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 100%;
+            background-color: var(--default-background-color);
+
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            padding: 20px 0;
+
+            transform: translateY(-200%);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links.active {
+            transform: translateY(0);
+        }
+
+        .hamburger {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container-navbar {
+        padding: 0 20px;
+    }
+
+    .navlinks {
+        font-size: 18px;
+    }
 }
 
 /*==[ SECTION 1 ]==*/

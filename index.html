@@ -3,18 +3,21 @@
 
 <head>
     <title>Firzy Network</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css" />
     <link rel="icon" type="image/x-icon" href="asset/logo-firzy-creative_transparent.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <!-- lazy-load -->
     <script src="js/lazy-load.js"></script>
+    <!-- scroll-memory -->
     <script src="js/scroll-memory.js"></script>
     <!-- data-tooltip -->
     <script src="js/data-tooltip.js"></script>
     <!-- wa-api -->
     <script src="js/wa-api.js"></script>
+    <!-- toggle-menu -->
+    <script src="js/toogle-menu.js"></script>
 </head>
 
 <body>
@@ -24,7 +27,7 @@
             <nav class="navbar">
                 <!-- logo -->
                 <div class="logo-navbar">
-                    <img src="asset/ikon-header_logo-firzy-creative_transparent.png" alt="" />
+                    <img src="asset/ikon-header_logo-firzy-creative_transparent.png" alt="" loading="lazy" />
                 </div>
 
                 <!-- navlinks -->
@@ -36,9 +39,17 @@
                     <a href="contact.html" class="navlinks">Contact</a>
                 </div>
                 <button id="theme-toggle" class="theme-btn">
-                    <span class="light-theme"><img data-tooltip="Mode Terang" src="library/design/toggle-theme-sun(light).svg" alt=""></span>
-                    <span class="light-theme"><img data-tooltip="Mode Gelap" src="library/design/toggle-theme-moon(light).svg" alt=""></span>
+                    <span class="light-theme"><img data-tooltip="Mode Terang"
+                            src="library/design/toggle-theme-sun(light).svg" alt=""></span>
+                    <span class="light-theme"><img data-tooltip="Mode Gelap"
+                            src="library/design/toggle-theme-moon(light).svg" alt=""></span>
                 </button>
+                <!-- hamburger button -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
