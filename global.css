@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     overflow-y: scroll;
     background-color: var(--default-background-color);
+    transition: all 0.3s ease;
 }
 
 /* kumpulan-Font-regular-medium-lighter */
@@ -152,7 +153,7 @@ body {
 }
 
 body.dark-mode {
-    --default-background-color: var(--dark-background-color);
+    --default-background-color: #101113;
     --primary-text-color: var(--primary-text-white);
 }
 
@@ -244,7 +245,6 @@ body.dark-mode {
 .light-theme.active {
     visibility: 1;
     transform: translateY(0);
-    background-color: var(--dark-background-color);
 }
 
 .night-theme {
@@ -255,7 +255,6 @@ body.dark-mode {
 .night-theme.active {
     visibility: 1;
     transform: translateY(0);
-    background-color: var(--default-background-color);
 }
 
 .overlay {
@@ -423,7 +422,7 @@ body.dark-mode {
 
 /*==[ SECTION 2 ]==*/
 .container-section2 {
-    /* background-color: whitesmoke; */
+    background-color: var(--default-background-color);
     display: block;
     justify-content: center;
     align-content: start;
@@ -434,7 +433,7 @@ body.dark-mode {
 .container-section2 h2 {
     text-align: center;
     font-size: 45px;
-    color: #1c271d;
+    color: var(--primary-text-color);
     font-weight: bold;
     padding-bottom: 30px;
 }
@@ -458,7 +457,6 @@ body.dark-mode {
     object-fit: cover;
     border-radius: 14px;
     flex-shrink: 0;
-    background-color: whitesmoke;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -630,7 +628,7 @@ body.dark-mode {
 
 .overlay-text-gallery h2 {
     margin: 0;
-    color: var(--default-background-color);
+    color: var(--primary-text-color);
     font-size: 40px;
     text-shadow: 3px 5px 5px rgba(9, 109, 101, 0.726);
 }
@@ -674,7 +672,7 @@ body.dark-mode {
 /*==[ SPOTLIGHT ]==*/
 .container-spotlight {
     display: block;
-    background-color: whitesmoke;
+    background-color: var(--default-background-color);
     padding-top: 40px;
     padding-bottom: 10px;
 }
@@ -684,7 +682,7 @@ body.dark-mode {
     font-size: var(--subheading-text);
     font-weight: bold;
     font-family: 'Poppins';
-    color: #333;
+    color: var(--primary-text-color);
     padding-bottom: 20px;
     height: 10vh;
 }
