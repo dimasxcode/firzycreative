@@ -29,28 +29,32 @@
             <nav class="navbar">
                 <!-- logo -->
                 <div class="logo-navbar">
-                    <img src="asset/ikon-header_logo-firzy-creative_transparent.png" alt="" loading="lazy" />
+                    <img src="asset/ikon-header_logo-firzy-creative_transparent.png" alt=""/>
                 </div>
 
-                <!-- navlinks -->
-                <div class="nav-links">
-                    <a href="index.html" class="navlinks active">Home</a>
-                    <a href="portfolio.html" class="navlinks">Portfolio</a>
-                    <a href="about.html" class="navlinks">About</a>
-                    <a href="services.html" class="navlinks">Services</a>
-                    <a href="contact.html" class="navlinks">Contact</a>
-                </div>
-                <button id="theme-toggle" class="theme-btn">
-                    <span class="light-theme"><img data-tooltip="Mode Terang"
-                            src="library/design/toggle-theme-sun(light).svg" alt=""></span>
-                    <span class="light-theme"><img data-tooltip="Mode Gelap"
-                            src="library/design/toggle-theme-moon(light).svg" alt=""></span>
-                </button>
-                <!-- hamburger button -->
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="container-navtools">
+                    <!-- navlinks -->
+                    <div class="nav-links">
+                        <a href="index.html" class="navlinks active">Home</a>
+                        <a href="portfolio.html" class="navlinks">Portfolio</a>
+                        <a href="about.html" class="navlinks">About</a>
+                        <a href="services.html" class="navlinks">Services</a>
+                        <a href="contact.html" class="navlinks">Contact</a>
+                    </div>
+                    <button data-tooltip="Ganti Mode" id="theme-toggle" class="theme-btn">
+                        <span class="light-theme">
+                            <img src="library/design/toggle-theme-sun(light).svg" alt="">
+                        </span>
+                        <span class="night-theme">
+                            <img src="library/design/toggle-theme-moon(light).svg" alt="">
+                        </span>
+                    </button>
+                    <!-- hamburger button -->
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -224,8 +228,10 @@
     <section>
         <div class="container-footer">
             <h3>Copyright © 2026 Firzy Creative / All Rights Reserved.</h3>
-            <img style="position:relative;" src="asset/logo-firzy-creative_transparent.png" alt="">
-            <p style="position: absolute; color: aliceblue; right: 5.5%; font-size: x-small;">TM</p>
+            <div class="footer-image">
+                <img src="asset/logo-firzy-creative_transparent.png" alt="">
+                <p>TM</p>
+            </div>
         </div>
     </section>
 </body>

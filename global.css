@@ -150,11 +150,15 @@ body {
     --hover-button-color: #01956b;
     --card-height: 400px;
     --subheading-text: clamp(28px, 2vw, 36px);
+    --column-green-color: var(--hover-active-color);
+    --indeks-galeri-section: var(var(--secondary-text-color));
 }
 
 body.dark-mode {
     --default-background-color: #101113;
     --primary-text-color: var(--primary-text-white);
+    --column-green-color: var(--hover-button-color);
+    --index-galeri-section: var(--dark-background-color);
 }
 
 /* navbar */
@@ -366,7 +370,7 @@ body.dark-mode {
 .text-section1 h1 {
     font-size: 80px;
     margin-bottom: 10px;
-    color: #f7f7f7;
+    color: var(--primary-text-white);
     min-height: 60px;
     order: 2;
 }
@@ -374,7 +378,7 @@ body.dark-mode {
 .text-section1 h2 {
     font-size: 25px;
     font-weight: 600;
-    color: #f7f7f7;
+    color: var(--primary-text-white);
     transform: translateY(15px);
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -383,7 +387,7 @@ body.dark-mode {
 
 .text-section1 p {
     font-size: 18px;
-    color: #f7f7f7;
+    color: var(--primary-text-white);
     order: 3;
 }
 
@@ -448,6 +452,7 @@ body.dark-mode {
 .carousel-track {
     display: flex;
     gap: 20px;
+    padding: 5px;
 }
 
 /* default-3-image */
@@ -458,17 +463,18 @@ body.dark-mode {
     border-radius: 14px;
     flex-shrink: 0;
     transition: transform 0.3s ease-in-out;
+    outline: var(--secondary-outline-color);
 }
 
 /*==[ SECTION 3 ]==*/
 .container-section3 {
     display: grid;
     height: fit-content;
-    /* Jadikan 3 kolom */
     grid-template-columns: repeat(3, 1fr);
     background-color: var(--default-background-color);
     padding: var(--padding-default);
     width: 100%;
+    color: var(--primary-text-color);
 }
 
 .column {
@@ -502,7 +508,7 @@ body.dark-mode {
 
 .our-services {
     display: block;
-    background-color: var(--hover-active-color);
+    background-color: var(--column-green-color);
     border-radius: var(--border-radius);
     padding: 1vw;
     height: fit-content;
@@ -593,6 +599,7 @@ body.dark-mode {
     transition: all 0.5s ease;
     box-shadow: var(--static-box-shadow);
     border-radius: var(--border-radius);
+    outline: var(--secondary-outline-color);
 }
 
 .gallery-item:hover,
