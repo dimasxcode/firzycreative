@@ -108,7 +108,7 @@ body {
     max-width: 240px;
     padding: 10px 12px;
     border-radius: 10px;
-    background: var(--secondary-text-color);
+    background: var(--secondary-default-color);
     color: var(--primary-text-color);
     font-size: 12px;
     font-weight: 500;
@@ -152,6 +152,7 @@ body {
     --subheading-text: clamp(28px, 2vw, 36px);
     --column-green-color: var(--hover-active-color);
     --indeks-galeri-section: var(var(--secondary-text-color));
+    --secondary-default-color: var(--secondary-text-color);
 }
 
 body.dark-mode {
@@ -159,6 +160,7 @@ body.dark-mode {
     --primary-text-color: var(--primary-text-white);
     --column-green-color: var(--hover-button-color);
     --index-galeri-section: var(--dark-background-color);
+    --secondary-default-color: var(--dark-background-color);
 }
 
 /* navbar */
